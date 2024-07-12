@@ -26,7 +26,7 @@ const ErrorPage = () => {
                     <h2 className="title">Page not found</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore{" "}
+                      sed deiusmod tempor incididunt ut labore et dolore{" "}
                     </p>
                     <Link
                       to={process.env.PUBLIC_URL + "/"}
