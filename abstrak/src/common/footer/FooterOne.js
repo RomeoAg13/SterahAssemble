@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaFacebookF, FaPinterestP, FaLinkedin, FaInstagram, FaVimeoV, FaDribbble, FaBehance, FaEnvelopeOpen, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import ServiceData from "../../data/service/ServiceMain.json";
-import { slugify } from '../../utils';
-
+const React = require( 'react');
+const {  FaLinkedin, FaEnvelopeOpen } = require( "react-icons/fa");
+const { FaXTwitter } = require( "react-icons/fa6");
+const ServiceData = require( "../../data/service/ServiceMain.json");
+const { slugify } = require( '../../utils');
+const { Link } = require( 'react-router-dom');
 const getServiceData = ServiceData;
 
 const FooterOne = ({parentClass}) => {
@@ -15,15 +14,8 @@ const FooterOne = ({parentClass}) => {
                 <div className="footer-top">
                     <div className="footer-social-link">
                         <ul className="list-unstyled">
-                            <li><Link to="https://facebook.com/"><FaFacebookF /></Link></li>
                             <li><Link to="https://twitter.com/"><FaXTwitter /></Link></li>
-                            <li><Link to="https://www.pinterest.com/"><FaPinterestP /></Link></li>
                             <li><Link to="https://www.linkedin.com/"><FaLinkedin /></Link></li>
-                            <li><Link to="https://www.instagram.com/"><FaInstagram /></Link></li>
-                            <li><Link to="https://vimeo.com/"><FaVimeoV /></Link></li>
-                            <li><Link to="https://dribbble.com/"><FaDribbble /></Link></li>
-                            <li><Link to="https://www.behance.net/"><FaBehance /></Link></li>
-                            <li><Link to="https://www.tiktok.com/en/"><FaTiktok /></Link></li>
                         </ul>
                     </div>
                 </div>

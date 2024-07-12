@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import HeaderOne from "../../common/header/HeaderOne";
-import SEO from "../../common/SEO";
-import ColorSwitcher from "../../elements/switcher/ColorSwitcher";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+const React = require("react");
+const { Link } = require("react-router-dom");
+const HeaderOne = require("../../common/header/HeaderOne");
+const SEO = require("../../common/SEO");
+const ColorSwitcher = require("../../elements/switcher/ColorSwitcher");
+const { AnimationOnScroll } = require("react-animation-on-scroll");
 
 const ErrorPage = () => {
   return (
