@@ -31,8 +31,8 @@ import ProjectGridFour from './pages/ProjectGridFour';
 import ProjectDetails from './pages/ProjectDetails';
 
 // Pages 
-import Splash from './pages/Splash';
-import AboutUs from './pages/AboutUs';
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/aboutUs/AboutUs';
 import OurOffice from './pages/OurOffice';
 import OurClients from './pages/OurClients';
 import Team from './pages/Team';
@@ -43,7 +43,7 @@ import Testimonials from './pages/Testimonials';
 import PricingTable from './pages/PricingTable';
 import Typography from './pages/Typography';
 import Contact from './pages/Contact';
-import ErrorPage from './pages/404';
+import ErrorPage from './pages/404/404';
 import ComingSoon from './pages/ComingSoon';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
@@ -57,7 +57,7 @@ const App = () => {
     <Router>
 		<ScrollToTop>
 			<Routes>
-				<Route path={process.env.PUBLIC_URL + "/"} element={<Splash />}/>
+				<Route path={process.env.PUBLIC_URL + "/"} element={<HomePage />}/>
 
 				<Route path={process.env.PUBLIC_URL + "/digital-agency"} element={<DigitalAgency />}/>
 				<Route path={process.env.PUBLIC_URL + "/creative-agency"} element={<CreativeAgency />}/>

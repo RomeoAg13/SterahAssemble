@@ -14,7 +14,7 @@ const ContactLocation = () => {
                         </div>
                         <div className="content">
                             <h4 className="title">{data.title}</h4>
-                            <p>{data.address}</p>
+                            <p>{data.fonction}</p>
                         </div>
                     </div>
                 </div>

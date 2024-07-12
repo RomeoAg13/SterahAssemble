@@ -19,7 +19,7 @@ const FormTwo = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_yj5dgzp', 'template_hfduayo', form.current, 'WLENsTkBytC0yvItS')
+        emailjs.sendForm('service_yj5dgzp', 'template_hfduayo', form.current, '-5EFcfmEypk4j6sYf')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -38,23 +38,19 @@ const FormTwo = () => {
         <form ref={form} onSubmit={sendEmail} className="axil-contact-form">
         <div className="form-group">
             <label>Name</label>
-            <input type="text" className="form-control" name="contact-name" required />
+            <input type="text" className="form-control" name="contact-name" required  placeholder='Jane Doe'/>
         </div>
         <div className="form-group">
             <label>Email</label>
-            <input type="email" className="form-control" name="contact-email" required />
-        </div>
-        <div className="form-group">
-            <label>Phone</label>
-            <input type="tel" className="form-control" name="contact-phone" required />
+            <input type="email" className="form-control" name="contact-email" required  placeholder='janedoe@exemple.com' />
         </div>
         <div className="form-group mb--40">
             <label>How can we help you?</label>
-            <textarea className="form-control" name="contact-message" rows="4"></textarea>
+            <textarea className="form-control" name="contact-message" rows="4" placeholder='I would like to know...'></textarea>
             
         </div>
         <div className="form-group">
-            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn">Get Pricing Now</button>
+            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn">Send</button>
         </div>
         <div className="form-group">
             {result ? <Result /> : null}
