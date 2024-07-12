@@ -25,7 +25,7 @@ const ErrorPage = () => {
                   <div className="content">
                     <h2 className="title">Page not found</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      Lorm ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore{" "}
                     </p>
                     <Link

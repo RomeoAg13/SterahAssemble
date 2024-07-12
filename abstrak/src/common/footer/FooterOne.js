@@ -5,7 +5,7 @@ const ServiceData = require( "../../data/service/ServiceMain.json");
 const { slugify } = require( '../../utils');
 const { Link } = require( 'react-router-dom');
 const getServiceData = ServiceData;
-
+ 
 const FooterOne = ({parentClass}) => {
     
     return (
